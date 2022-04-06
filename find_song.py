@@ -3,8 +3,10 @@ from collections import defaultdict
 import spotipy
 import pandas as pd
 import os
+import cred
 
-sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=os.environ["SPOTIFY_CLIENT_ID"],client_secret=os.environ["SPOTIFY_CLIENT_SECRET"]))
+
+sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=cred.client_ID,client_secret=cred.client_SECRET))
 
 
 def find_song(name, year):
@@ -36,4 +38,4 @@ def find_song(name, year):
    
    return pd.DataFrame(song_data)
 
-print(find_song("Black Hole Sun", 1994))
+print(find_song("Breaking the habit", 2003))
