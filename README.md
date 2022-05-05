@@ -27,3 +27,7 @@ As we can see from the list above, the recommendation algorithm produced a list 
 ### Is the recommended list of songs actually correlates to our input list?
 
 The top song on the list is by Rod Stewart, who like Michael Jackson, rose to fame in the 1980s. The list also contains a 2003 edit of Michael Jackson’s Thriller, which makes sense given that the user has already heard the original 1982 version of this song. The list also includes pop and rock songs from 1980s groups such as Stars On 45 and Talking Heads.
+
+<br>
+
+### You can find the detailed information regarding the working of this application in **main_project.ipynb** file
